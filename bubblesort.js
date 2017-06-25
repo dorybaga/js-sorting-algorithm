@@ -1,19 +1,15 @@
+// iterate over each element
+// check if index is greater than next index
+// if it is greater, swap the two elements
+
+// loop through the array again, repeat instructions for each element in the array (length of array)
+
+
 var unsorted = [65, 23, 79, 64, 49, 77, 6];
 
+// method 1: nested for loops ----------------------------
+
 function bubbleSort(arr){
-  // loop through array
-  // if arr[i] > arr[i+1] is true, swap
-    // if false, don't swap
-
-  // keep looping until swap is false??
-
-
-  // iterate over each element
-  // check if this index is greater than next index
-  // if is greater, swap the two elements
-
-  // loop through the array again repeat instructions for each element in the array
-
 
   for (var j = 0; j < arr.length; j++){
     for (var i = 0; i < arr.length; i++){
@@ -27,10 +23,12 @@ function bubbleSort(arr){
     return arr;
 }
 
-bubbleSort(unsorted); // should return the sorted array
+bubbleSort(unsorted);
 var sorted = bubbleSort(unsorted);
 console.log('sorted', sorted);
 
+
+// method 2: while loop ----------------------------
 
 function bubbleSort2(arr){
 
@@ -51,9 +49,11 @@ function bubbleSort2(arr){
   return arr;
 }
 
-bubbleSort2(unsorted); // should return the sorted array
+bubbleSort2(unsorted);
 var sorted2 = bubbleSort(unsorted);
 console.log('sorted2', sorted2);
+
+// method 3: do, while ----------------------------
 
 function bubbleSort3(arr){
   var swap = false;
@@ -72,6 +72,6 @@ function bubbleSort3(arr){
   return arr;
 }
 
-bubbleSort3(unsorted); // should return the sorted array
+bubbleSort3(unsorted);
 var sorted3 = bubbleSort(unsorted);
 console.log('sorted3', sorted3);
